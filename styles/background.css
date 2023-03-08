@@ -1,0 +1,43 @@
+.body{
+    
+    margin:0px;
+    position: relative;
+    overflow-x: hidden;
+    background: url('../images/background_f.svg') no-repeat;
+    background-size: cover;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+#section_HEADER{
+    position: sticky;
+    top: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    z-index: 10;
+}
+#section_INDEX{
+    flex:1;
+}
+
+#section_ABOUT_ME{
+    flex:1;
+    margin-top:15% ;
+    height: 100dvh;
+}
+#section_CERTIFICATS{
+    float: 1;
+    margin-top:15% ;
+    height: 100dvh;
+}
+#section_PORTFOLIO{
+    flex: 1;
+    margin-top:15% ;
+    height: 100dvh;
+}
+#section_CONTACTS{
+    flex: 1;
+    margin-top:15% ;
+    height: 100dvh;
+}

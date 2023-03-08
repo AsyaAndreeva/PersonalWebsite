@@ -1,0 +1,108 @@
+#InfoINDEX{
+    display: flex;
+    flex-direction: row;       
+    font-family: Jaldi;
+    align-items: center;
+}
+.box{
+    box-shadow: 5px 5px 5px 5px #00000025;
+    border-radius: 0px 20px 20px 0px;
+
+    background: linear-gradient(rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
+#TextBox{
+    margin: 0%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left:0px;
+    flex:1;
+}
+.TextInBox{
+    display: flex;
+    flex-direction: column;
+    flex:7;
+}
+.text{
+    flex: 1;
+    text-align: left;
+    font-weight: 400;
+    font-size: 250%;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+#secondText{
+    flex: 2;
+    font-weight: 100;
+    margin-top: 0%;
+    font-size: 350%;
+}
+.line{
+    flex: 1;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-left: 6px solid rgb(29, 29, 29);
+    height:150px;
+}
+.photoBox{
+    flex:3;
+}
+
+#PhotoTextBox{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#back{
+    flex: 5;
+    height: 500px;
+    width:200px ;
+    margin-right: 0%;
+    border-radius: 20px 0px 0px 400px;
+    display: flex;
+    flex-direction: row;
+}
+.Myimage{
+    position:absolute;
+    right: -10%;
+    
+}
+#freeSpace{
+    flex:3;
+}
+#textbox_name{
+    flex:1;
+    background-color:  rgb(29, 29, 29);
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    left:0%;
+    top: 9%;
+    border-radius: 0px 50px 50px 0px;
+}
+#hello{
+    height: 50px;
+    color:white;
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    
+    font-size:  calc(1.6vw + 1.6vh);
+    letter-spacing: 0.40em;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0%;
+    padding-left: 5%;
+}
+#fam_name{
+    padding-top: 10%;
+    padding-left: 5%;
+font-family: 'Jaldi';
+font-style: normal;
+font-weight: 400;
+font-size: 300%;
+letter-spacing: 0.2em;
+}
