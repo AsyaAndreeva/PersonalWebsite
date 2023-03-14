@@ -5,6 +5,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+
         <title>Asya Andreeva</title>
 
         <link rel="website icon" type="png" href="images/letter-a (2).png">
@@ -17,26 +22,25 @@
         <link rel="stylesheet" href="styles/portfolio.css">
         <link rel="stylesheet" href="styles/contacts.css">
 
-        <script src="script/header.js"></script>
 
     </head>
 
     <body class="body">
 
-        <section_HEADER id="section_HEADER">
+        <sectionHeader id="sectionHeader">
             <navigation >
                 <ul  id="Nav">
-                    <li class="NavStyle"><a href="#section_INDEX"  class="PrimeNavStyle">Home</a></li>
+                    <li class="NavStyle"><a href="#sectionIndex"  class="PrimeNavStyle">Home</a></li>
 
-                    <li class="NavStyle"><a href="#section_ABOUT_ME" >About me</a></li>
+                    <li class="NavStyle"><a href="#sectionAboutMe" >About me</a></li>
                     <li class="NavStyle"><a href="#section_CERTIFICATS" >Certificats</a></li>
-                    <li class="NavStyle"><a href="section_PORTFOLIO" >Portfolio</a></li>
-                    <li class="NavStyle"><a href="section_CONTACTS" >Contacts</a></li>
+                    <li class="NavStyle"><a href="#sectionPortfolio" >Portfolio</a></li>
+                    <li class="NavStyle"><a href="#sectionContacts" >Contacts</a></li>
                 </ul>
                 </navigation>
-        </section_HEADER>
+        </sectionHeader>
 
-        <section_INDEX id="section_INDEX">
+        <section id="sectionIndex">
 
          <info id="InfoINDEX">
             <textbox id="TextBox" class="box">
@@ -62,19 +66,20 @@
                 </box>
             </photo>
         </info>
-    </section_INDEX>
+    </section>
 
-    <section_ABOUT_ME id="section_ABOUT_ME">
+    <section id="sectionAboutMe">
     <div id="Info">
          <div class="TextBox">
-            <p>Hello! My name is Asya. I am student at NBU in Sofia and my major is Informatics. I have completed the SoftUni Creative path for Graphic Designer and UI/UX Designer. Through the years I have worked with many teams on different projects in the fields of Robotics, Informational technologies, Multimedia projects, etc. Currently I am studing on my own to become a Front-End Developer. </p>
+            <p>   My name is Asya. I am a student at NBU in Sofia and my major is Informatics. I have completed the SoftUni Creative path for Graphic Designer and UI/UX Designer. Through the years I have worked with many teams on different projects in the fields of Robotics, Informational technologies and Multimedia projects. Currently 
+                I am studying on my own to become a Front-End Developer. I am also a mentor of a kid's robotic team at my home town Razgrad. My goal is to learn as much as I can and to be helpful to as many people as possible. </p>
          </div>
          <div id="line_aboutMe" class="line"></div>
          <div id="free"></div>
      </div>
-    </section_ABOUT_ME>
+    </section>
 
-    <section_CERTIFICATS id="section_CERTIFICATS">
+    <section id="section_CERTIFICATS">
         <CertificatsSpace class="Space">
             <left id="BetaLeft" class="Certificat">
                 <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
@@ -88,13 +93,13 @@
                 <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
             </right>
         </CertificatsSpace>
-    </section_CERTIFICATS>
+    </section>
 
-    <section_PORTFOLIO id="section_PORTFOLIO">
+    <section id="sectionPortfolio">
         <projects_space class="projects">
             <p id="DP_text" class="textbox">Design projects</p>
             <design_projects class="designCode_projects">
-                <div class="box_info_projects"><p>Working on it...</p></div>
+                <img class = "box_info_projects_image" src = "images/meloman.png">
                 <div class="box_info_projects"><p>Working on it...</p></div>
                 <div class="box_info_projects"><p>Working on it...</p></div>
                 
@@ -106,9 +111,9 @@
                 <div class="box_info_projects"><p>Working on it...</p></div>
             </code_projects>
          </projects_space>
-    </section_PORTFOLIO>
+    </section>
 
-    <section_CONTACTS id="section_CONTACTS">
+    <section id="sectionContacts">
         <div id="Info_Contacts">
             <div id="TextBox_Conatcts">
                <p id="text_contact">Contact me</p>
@@ -138,7 +143,8 @@
         </Box>
     </div>
              
-    </section_CONTACTS>
+    </section>
 
+    <script src="script/header.js"></script>
     </body>
 </html>

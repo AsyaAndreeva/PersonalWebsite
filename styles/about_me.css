@@ -1,6 +1,7 @@
 #Info{      
     display: flex;
     flex-direction: column;
+    font-family: 'Monda', sans-serif;
     font-family: Jaldi;
 }
 .TextBox{
@@ -19,6 +20,8 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px); 
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 #line_aboutMe{
     flex: 1;

@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
 }
-#section_HEADER{
+#sectionHeader{
     position: sticky;
     top: 2%;
     margin-top: 2%;
@@ -17,27 +17,27 @@
     margin-right: 2%;
     z-index: 10;
 }
-#section_INDEX{
+#sectionIndex{
     flex:1;
 }
 
-#section_ABOUT_ME{
+#sectionAboutMe{
     flex:1;
-    margin-top:15% ;
     height: 100dvh;
+    padding-top: 10%;
 }
 #section_CERTIFICATS{
     float: 1;
-    margin-top:15% ;
     height: 100dvh;
+    padding-top: 10%;
 }
-#section_PORTFOLIO{
+#sectionPortfolio{
     flex: 1;
-    margin-top:15% ;
     height: 100dvh;
+    padding-top: 7%;
 }
-#section_CONTACTS{
+#sectionContacts{
     flex: 1;
-    margin-top:15% ;
     height: 100dvh;
+    padding-top: 10%;
 }

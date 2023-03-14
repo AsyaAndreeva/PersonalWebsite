@@ -4,8 +4,9 @@
     
     display: flex;
     flex-direction: row;
-    font-family: Jaldi;
-    font-size: 150%;
+    font-family: 'Monda', sans-serif;
+    font-family: 'Jaldi';
+    font-size: 200%;
     box-shadow: 5px 5px 4px #00000025;
                 
 }
