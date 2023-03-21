@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="styles/portfolio.css">
         <link rel="stylesheet" href="styles/contacts.css">
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     </head>
 
@@ -79,20 +81,45 @@
      </div>
     </section>
 
-    <section id="section_CERTIFICATS">
-        <CertificatsSpace class="Space">
-            <left id="BetaLeft" class="Certificat">
-                <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
-            </left>
+    <!-- <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">Slide 01</li>
+                <li class="splide__slide">Slide 02</li>
+                <li class="splide__slide">Slide 03</li>
+                <li class="splide__slide">Slide 04</li>
+                <li class="splide__slide">Slide 05</li>
+                <li class="splide__slide">Slide 06</li>
+                <li class="splide__slide">Slide 07</li>
+            </ul>
+        </div>
+    </section> -->
 
-            <main id="Main" class="Certificat">
-                <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
-            </main>
-
-            <right id="BetaRight" class="Certificat">
-                <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
-            </right>
-        </CertificatsSpace>
+    <section id="section_CERTIFICATSe">
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track" style="overflow: visible;">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img class="certificateImage" src="certificats/Illustrator Advanced - September 2022 - Certificate.png" alt="Certificate image">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="certificateImage" src="certificats/Illustrator Advanced - September 2022 - Certificate.png" alt="Certificate image">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="certificateImage" src="certificats/Illustrator Advanced - September 2022 - Certificate.png" alt="Certificate image">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="certificateImage" src="certificats/Illustrator Advanced - September 2022 - Certificate.png" alt="Certificate image">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="certificateImage" src="certificats/Illustrator Advanced - September 2022 - Certificate.png" alt="Certificate image">
+                    </li>
+                    <li class="splide__slide">
+                        <img class="certificateImage" src="certificats/Illustrator Advanced - September 2022 - Certificate.png" alt="Certificate image">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="sectionPortfolio">
@@ -146,5 +173,23 @@
     </section>
 
     <script src="script/header.js"></script>
+
+    <script>
+        const splide = new Splide('.splide', {
+            perPage: 3,
+            perMove: 1,
+            focus: 'center',
+            omitEnd: true,
+        });
+
+        splide.mount(window.Splide.Extensions);
+    </script>
+
+    <script>
+        setInterval(() => {
+            document.querySelector('.splide__pagination__page').style.display = "none";
+        });
+    </script>
+
     </body>
 </html>
