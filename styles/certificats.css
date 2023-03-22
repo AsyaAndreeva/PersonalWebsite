@@ -31,3 +31,22 @@
     flex: 1;
     margin: auto;
 }
+
+#fixedTransparentDiv {
+    position: absolute;
+    margin-left: 30%;
+    height: 100vh;
+    width: 40vw;
+}
+
+.zoomCertificate {
+    width: 100%;
+    margin-top: -15%;
+    margin-left: 5%;
+}
+
+.removeZoomCertificate {
+    width: 70%;
+    margin-top: 0;
+    margin-left: 20%;
+}

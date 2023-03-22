@@ -95,7 +95,8 @@
         </div>
     </section> -->
 
-    <section id="section_CERTIFICATSe">
+    <section id="section_CERTIFICATS">
+        <div id="fixedTransparentDiv"></div>
         <div class="splide" role="group" aria-label="Splide Basic HTML Example">
             <div class="splide__track" style="overflow: visible;">
                 <ul class="splide__list">
@@ -189,6 +190,27 @@
         setInterval(() => {
             document.querySelector('.splide__pagination__page').style.display = "none";
         });
+    </script>
+
+    <script>
+        const emptyElement = document.getElementById("fixedTransparentDiv");
+        const certificates = document.querySelectorAll(".splide__slide");
+        const emptyElementRect = emptyElement.getBoundingClientRect();
+
+        setInterval(() => {
+            Array.from(certificates).forEach((certificate) => {
+                const certificateRect = certificate.getBoundingClientRect();
+                
+                const overlapX = emptyElementRect.right >= certificateRect.left && emptyElementRect.left <= certificateRect.right;
+                const overlapY = emptyElementRect.bottom >= certificateRect.top && emptyElementRect.top <= certificateRect.bottom;
+
+                if (overlapX && overlapY) {
+                    console.log("Elements overlap!");
+                } else {
+                    console.log("Elements do not overlap.");
+                }
+            });
+        }, 100);
     </script>
 
     </body>
