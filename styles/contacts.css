@@ -54,6 +54,10 @@
     margin-top: 9%;
 
 }
+
+.contact_text:hover{
+    cursor: pointer;
+}
 #Box_1{
 flex: 1;
 margin-bottom: 5%;

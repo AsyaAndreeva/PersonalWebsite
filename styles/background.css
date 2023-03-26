@@ -3,7 +3,7 @@
     margin:0px;
     position: relative;
     overflow-x: hidden;
-    background: url('../images/background_f.svg') no-repeat;
+    background: url('../images/background.svg') no-repeat;
     background-size: cover;
     height: fit-content;
     display: flex;
@@ -39,5 +39,5 @@
 #sectionContacts{
     flex: 1;
     height: 100dvh;
-    padding-top: 10%;
+    padding-top: 3%;
 }

@@ -41,18 +41,17 @@
 }
 .box_info_projects_image{
     flex:1;
-    height: 20vh;
+    height: 40vh;
     width: 20vw;
     box-shadow: 5px 5px 5px 5px #00000025;
     border-radius: 20px 20px 20px 20px;
-    transition: all .6s ease;
+    transition: all .3s ease;
 }
 
 .box_info_projects_image:hover{
-    height: 30vh;
-    width: 30vw;
-    transition: all .6s ease;
+    cursor: pointer;
 }
+
 
 #CP_projects{
     margin:5%;
