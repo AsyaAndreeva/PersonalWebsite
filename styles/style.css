@@ -1,14 +1,19 @@
 :root{
-    --main-white: #f2f2f2;
+    --main-white: #FDFFFC;
     --main-black: #151515;
     --light-gray: #a0a5a3;
-    --blue: #437c90;
+    --blue: #1282a2;
     --main-font: 'Advent Pro', 'Plus Jakarta Sans', 'Roboto', sans-serif;
 }
 
 
 body{
     background-color: var(--main-white);
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-black);
 }
 
 #homePageSection2{
@@ -24,6 +29,12 @@ body{
     height: 100vh;
 }
 
+#resumePage{
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding-top: 8rem;
+}
+
 .left{
     flex: 1;
     text-align: left;
@@ -31,12 +42,10 @@ body{
 
 .left .header{
     font-weight: 500;
-    font-size: 6rem;
 }
 
 .right .header{
     font-weight: 500;
-    font-size: 6rem;
 }
 
 .right{
@@ -49,7 +58,14 @@ body{
 .textBox{
     display: grid;
     grid-template-columns: 30% auto;
+    margin-top: 1.5rem;
+}
+
+.paragraphBox{
+    margin-bottom: 10rem;
     margin-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .smallHeaderLeftSideTextBox{
@@ -60,6 +76,14 @@ body{
 .smallHeaderRightSideTextBox{
     grid-column: 2;
     padding-left: 5rem;
+}
+
+.headerBig{
+    color: var(--main-black);
+    font-size:8rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 .header{
@@ -84,6 +108,14 @@ body{
     margin-top: 2rem;
 }
 
+.paragraph{
+    color: var(--light-gray);
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
 #navigation{
     list-style: none;
     display: flex;
@@ -95,7 +127,7 @@ body{
 }
 
 .navigationElement{
-    text-decoration: line-through 0.06rem var(--main-black);
+    text-decoration: line-through 0.06rem var(--blue);
     flex: 1;
     color: var(--main-black);
     font-size: 1.2rem;
