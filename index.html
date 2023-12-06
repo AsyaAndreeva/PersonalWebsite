@@ -1,152 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asya Andreeva</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 
-        <title>Asya Andreeva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-        <link rel="website icon" type="png" href="images/letter-a (2).png">
-        <link rel="stylesheet" href="certificats/Illustrator Advanced - September 2022 - Certificate.png">
+</head>
+<body>
+    <ul id="navigation">
+        <li class="navigationElement current"><a id="homeNav">Home</a></li>
+        <li class="navigationElement"><a id="resumeNav">Resume</a></li>
+        <li class="navigationElement"><a id="portfolioNav">Portfolio</a></li>
+        <li class="navigationElement"><a id="contactMeNav">Contact me</a></li>
+    </ul>
 
-        <link rel="stylesheet" href="styles/links.css">
-
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-
-    </head>
-
-    <body class="body">
-
-        <sectionHeader id="sectionHeader">
-            <navigation >
-                <ul  id="Nav">
-                    <li class="NavStyle"><a href="#sectionIndex"  class="PrimeNavStyle">Home</a></li>
-
-                    <li class="NavStyle"><a href="#sectionAboutMe" >About me</a></li>
-                    <li class="NavStyle"><a href="#section_CERTIFICATS" >Certificats</a></li>
-                    <li class="NavStyle"><a href="#sectionPortfolio" >Portfolio</a></li>
-                    <li class="NavStyle"><a href="#sectionContacts" >Contacts</a></li>
-                </ul>
-                </navigation>
-        </sectionHeader>
-
-        <section id="sectionIndex">
-
-         <info id="InfoINDEX">
-            <textbox id="TextBox" class="box">
-        <div class="TextInBox">
-            <div>
-            <p class="text">
-                Graphic
-            </p>
-            <p class="text" id="secondText"> 
-                Designer
-            </p>
-        </div>
-        </div>
-               <line class="line"></line>
-            </textbox>
-
-            <photo class="photoBox">
-                <box id="PhotoTextBox">
-                    <freeSpace id="freeSpace"></freeSpace>
-                    <back id="back" class="box">
-                        <textbox id="textbox_name"><p id="hello">Hello! I'am Asya</p></textbox>
-                        <p id="fam_name">Andreeva</p>
-                     </back>
-                    <img src="images/picture.png" class="Myimage" >
-                </box>
-            </photo>
-        </info>
+    <section class="section" id="homePage">
+        <div class="header">Asya Andreeva</div>
+        <div class="smallHeader">UI & UX Designer</div>         
     </section>
-
-    <section id="sectionAboutMe">
-    <div id="Info">
-         <div class="TextBox">
-            <p>   My name is Asya. I am a student at NBU in Sofia and my major is Informatics. I have completed the SoftUni Creative path for Graphic Designer and UI/UX Designer. Through the years I have worked with many teams on different projects in the fields of Robotics, Informational technologies and Multimedia projects. Currently 
-                I am studying on my own to become a Front-End Developer. I am also a mentor of a kid's robotic team at my home town Razgrad. My goal is to learn as much as I can and to be helpful to as many people as possible. </p>
-         </div>
-         <div id="line_aboutMe" class="line"></div>
-         <div id="free"></div>
-     </div>
-     <div id="CV"><a href="/CV/CV.pdf" target="AsyaAndreeva"> Open CV </a></div>
-    </section>
-
-    <section id="section_CERTIFICATS">
-        <CertificatsSpace class="Space">
-            <left id="BetaLeft" class="Certificat">
-                <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
-            </left>
-
-            <main id="Main" class="Certificat">
-                <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
-            </main>
-
-            <right id="BetaRight" class="Certificat">
-                <img class="photo" src="certificats/Illustrator Advanced - September 2022 - Certificate.png">
-            </right>
-        </CertificatsSpace>
-    </section>
-
-    <section id="sectionPortfolio">
-        <projects_space class="projects">
-            <p id="DP_text" class="textbox">Design projects</p>
-            <design_projects class="designCode_projects">
-                <a class = "box_info_projects_link" href="https://www.figma.com/proto/fLoD0GNbP1iJEzVg0Fw0a2/AsyaAndreeva_UI-design-systems?page-id=51%3A3748&node-id=51-4248&viewport=357%2C331%2C0.15&scaling=min-zoom&starting-point-node-id=51%3A4248" target="_blank"><img id = "box_info_projects_image" src = "images/meloman.png" ></a>
-                <div class="box_info_projects"><p>Working on it...</p></div>
-                <div class="box_info_projects"><p>Working on it...</p></div>
-                
-            </design_projects>
-            <p id="CP_text" class="textbox">Code projects</p>
-            <code_projects class="designCode_projects">
-                <div class="box_info_projects"><p>Working on it...</p></div>
-                <div class="box_info_projects"><p>Working on it...</p></div>
-                <div class="box_info_projects"><p>Working on it...</p></div>
-            </code_projects>
-         </projects_space>
-    </section>
-
-    <section id="sectionContacts">
-        <div id="Info_Contacts">
-            <div id="TextBox_Conatcts">
-               <p id="text_contact">Contact me</p>
-               <Box id="Box_box">
-                        <div id="Box_1">
-                            <div class="contact_box" onclick="window.open('https://github.com/AsyaAndreeva')">
-                        <p class="contact_text">AsyaAndreeva</p>
-                        <img class="logos" src="images/github-logo.png">
-               </div>
-               <div class="contact_box"  onclick="window.open('https://www.linkedin.com/in/asya-andreeva-75509720b/')">
-                <p class="contact_text">AsyaAndreeva</p>
-                <img class="logos" src="images/linkedin.png">
-               </div>
-            </div>
-            
-
-           <div id="Box_2">
-                <div class="contact_box">
-                 <p class="contact_text">asiara032@gmail.com</p>
-                 <img class="logos" src="images/mail.png">
-                </div>
-                <div class="contact_box" onclick="window.open('https://instagram.com/asia_r_a?igshid=ZDdkNTZiNTM=')">
-                 <p class="contact_text">AsyaAndreeva</p>
-                 <img class="logos" src="images/instagram.png">
+    <section class="section" id="homePageSection2"> 
+        <div class="left">
+            <div class="header">Resume</div>
+            <div class="textBox">
+                <div class="smallHeader smallHeaderLeftSideTextBox">About me</div>
+                <div class="smallHeaderRightSideTextBox">
+                    <div class="text">Self Introduction</div>
+                    <div class="text">Education</div>
+                    <div class="text">Work Experience</div>
+                    <div class="text">Contact me</div>
                 </div>
             </div>
-        </Box>
-    </div>
-             
+        </div>
+        <div class="right">
+            <div class="header">Portfolio</div>
+            <div class="textBox">
+                <div class="smallHeader smallHeaderLeftSideTextBox">My work</div>
+                <div class="smallHeaderRightSideTextBox">
+                    <div class="text">UI & Ux Projects</div>
+                    <div class="text">Graphic design projects</div>
+                    <div class="text">JavaScript Projects</div>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <script src="script/header.js"></script>
-    </body>
+</body>
 </html>

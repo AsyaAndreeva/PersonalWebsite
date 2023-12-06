@@ -1,0 +1,114 @@
+:root{
+    --main-white: #f2f2f2;
+    --main-black: #151515;
+    --light-gray: #a0a5a3;
+    --blue: #437c90;
+    --main-font: 'Advent Pro', 'Plus Jakarta Sans', 'Roboto', sans-serif;
+}
+
+
+body{
+    background-color: var(--main-white);
+}
+
+#homePageSection2{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+}
+
+#homePage{
+    text-align: center;
+    height: 100vh;
+}
+
+.left{
+    flex: 1;
+    text-align: left;
+}
+
+.left .header{
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.right .header{
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.right{
+    flex: 1;
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: 8rem;
+}
+
+.textBox{
+    display: grid;
+    grid-template-columns: 30% auto;
+    margin-top: 2rem;
+}
+
+.smallHeaderLeftSideTextBox{
+    grid-column: 1;
+    font-size: 3rem !important;
+}
+
+.smallHeaderRightSideTextBox{
+    grid-column: 2;
+    padding-left: 5rem;
+}
+
+.header{
+    color: var(--main-black);
+    font-size: 5rem;
+    font-family: var(--main-font);
+    padding-top: 20%;
+}
+
+.smallHeader{
+    color: var(--main-black);
+    font-size: 2rem;
+    font-family: var(--main-font);
+    margin-top: 2%;
+}
+
+.text{
+    color: var(--light-gray);
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+#navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    position: fixed;
+    top: 2%;
+    right: 7%;
+}
+
+.navigationElement{
+    text-decoration: line-through 0.06rem var(--main-black);
+    flex: 1;
+    color: var(--main-black);
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    font-weight: 500;
+    text-align: right;
+}
+
+.current{
+    text-decoration: none;
+}
+
+.navigationElement:hover{
+    text-decoration: underline 0.06rem var(--blue);
+    text-underline-offset: 0.5rem;
+}
