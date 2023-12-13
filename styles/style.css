@@ -2,10 +2,19 @@
     --main-white: #FDFFFC;
     --main-black: #151515;
     --light-gray: #a0a5a3;
-    --blue: #1282a2;
+    --teal: #0E7C7B;
+    --chinese-violet: #A5668B;
+    --cyclamen: #E86A92;
+    --indigo: #7C77B9;
+    --carmine: #931621;
     --main-font: 'Advent Pro', 'Plus Jakarta Sans', 'Roboto', sans-serif;
 }
 
+html{
+
+   scroll-behavior: smooth;
+    
+}
 
 body{
     background-color: var(--main-white);
@@ -63,9 +72,10 @@ a{
 
 .paragraphBox{
     margin-bottom: 10rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    border-left: 0.05rem solid var(--main-black);
 }
 
 .smallHeaderLeftSideTextBox{
@@ -100,8 +110,12 @@ a{
     margin-top: 2%;
 }
 
+.smallHeader:hover{
+    color: var(--carmine);
+}
+
 .text{
-    color: var(--light-gray);
+    color: var(--main-black);
     font-size: 1.5rem;
     font-family: var(--main-font);
     font-weight: 200;
@@ -113,7 +127,8 @@ a{
     font-size: 1.2rem;
     font-family: var(--main-font);
     font-weight: 400;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #navigation{
@@ -127,7 +142,7 @@ a{
 }
 
 .navigationElement{
-    text-decoration: line-through 0.06rem var(--blue);
+    text-decoration: line-through 0.075rem var(--carmine);
     flex: 1;
     color: var(--main-black);
     font-size: 1.2rem;
@@ -141,6 +156,44 @@ a{
 }
 
 .navigationElement:hover{
-    text-decoration: underline 0.06rem var(--blue);
+    text-decoration: underline 0.075rem var(--carmine);
     text-underline-offset: 0.5rem;
+}
+
+.lineHorizontal{
+    width: 30vw;
+    margin-top: 5rem;
+    border-bottom: 0.1rem solid var(--carmine);
+}
+
+.lineVertical{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    margin-right: 15rem;
+    height: 10vw;
+    border-right: 0.1rem solid var(--carmine);
+}
+
+.boxOfBoxes{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+
+.box{
+    flex: 1;
+    border-left: 0.05rem solid var(--main-black);
+    transform: rotate(15deg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.box .textWrapper {
+    transform: rotate(-15deg);
+    text-align: center;
+    width: 100%;
 }
