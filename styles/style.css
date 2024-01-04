@@ -5,8 +5,8 @@
     --teal: #0E7C7B;
     --chinese-violet: #A5668B;
     --cyclamen: #E86A92;
-    --indigo: #7C77B9;
-    --carmine: #931621;
+    --indigo: #e0f5ff;
+    --carmine: #d0202f;
     --main-font: 'Advent Pro', 'Plus Jakarta Sans', 'Roboto', sans-serif;
 }
 
@@ -23,6 +23,11 @@ body{
 a{
     text-decoration: none;
     color: var(--main-black);
+}
+
+a:hover{
+    color: var(--light-gray);
+    cursor: pointer;
 }
 
 #homePageSection2{
@@ -111,7 +116,7 @@ a{
 }
 
 .smallHeader:hover{
-    color: var(--carmine);
+    color: var(--light-gray);
 }
 
 .text{
@@ -142,7 +147,7 @@ a{
 }
 
 .navigationElement{
-    text-decoration: line-through 0.075rem var(--carmine);
+    text-decoration: line-through 0.075rem var(--main-black);
     flex: 1;
     color: var(--main-black);
     font-size: 1.2rem;
@@ -156,23 +161,7 @@ a{
 }
 
 .navigationElement:hover{
-    text-decoration: underline 0.075rem var(--carmine);
-    text-underline-offset: 0.5rem;
-}
-
-.lineHorizontal{
-    width: 30vw;
-    margin-top: 5rem;
-    border-bottom: 0.1rem solid var(--carmine);
-}
-
-.lineVertical{
-    position: absolute;
-    bottom:0;
-    right: 0;
-    margin-right: 15rem;
-    height: 10vw;
-    border-right: 0.1rem solid var(--carmine);
+    text-decoration: none;
 }
 
 .boxOfBoxes{
@@ -192,8 +181,19 @@ a{
     align-items: center;
 }
 
+.boxVertical{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 .box .textWrapper {
     transform: rotate(-15deg);
     text-align: center;
     width: 100%;
+}
+
+#contactBox{
+    max-height: 20vh;
 }

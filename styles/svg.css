@@ -1,0 +1,25 @@
+.container {
+    position: absolute;
+    right: 17rem;
+    top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.path {
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    stroke-width: 0.7;
+    animation: anim 5s ease-in-out alternate infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      stroke-dashoffset: var(--length);
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }

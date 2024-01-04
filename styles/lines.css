@@ -1,0 +1,15 @@
+
+.lineHorizontal{
+    width: 50vw;
+    margin-top: 1rem;
+    border-bottom: 0.1rem solid var(--main-black);
+}
+
+.lineVertical{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    margin-right: 15rem;
+    height: 10vw;
+    border-right: 0.1rem solid var(--carmine);
+}
