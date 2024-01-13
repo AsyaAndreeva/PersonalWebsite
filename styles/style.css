@@ -1,199 +1,215 @@
-:root{
-    --main-white: #FDFFFC;
-    --main-black: #151515;
-    --light-gray: #a0a5a3;
-    --teal: #0E7C7B;
-    --chinese-violet: #A5668B;
-    --cyclamen: #E86A92;
-    --indigo: #e0f5ff;
-    --carmine: #d0202f;
-    --main-font: 'Advent Pro', 'Plus Jakarta Sans', 'Roboto', sans-serif;
+:root {
+  --main-white: #fdfffc;
+  --main-black: #151515;
+  --light-gray: #6f6d6d;
+  --teal: #0e7c7b;
+  --chinese-violet: #a5668b;
+  --cyclamen: #e86a92;
+  --indigo: #e0f5ff;
+  --carmine: #d0202f;
+  --main-font: "Advent Pro", "Plus Jakarta Sans", "Roboto", sans-serif;
 }
 
-html{
-
-   scroll-behavior: smooth;
-    
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--main-white);
+body {
+  background-color: var(--main-white);
+  font-family: var(--main-font);
+  color: var(--main-black);
 }
 
-a{
-    text-decoration: none;
-    color: var(--main-black);
+a {
+  text-decoration: none;
+  color: var(--main-black);
 }
 
-a:hover{
-    color: var(--light-gray);
-    cursor: pointer;
+a:hover {
+  color: var(--light-gray);
+  cursor: pointer;
 }
 
-#homePageSection2{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 10rem;
+.textBox {
+  display: grid;
+  grid-template-columns: 30% auto;
+  margin-top: 7%;
 }
 
-#homePage{
-    text-align: center;
-    height: 100vh;
+.smallHeaderLeftSideTextBox {
+  grid-column: 1;
 }
 
-#resumePage{
-    margin-left: 8rem;
-    margin-right: 8rem;
-    padding-top: 8rem;
+.smallHeaderRightSideTextBox {
+  grid-column: 2;
+  padding-left: 20%;
 }
 
-.left{
-    flex: 1;
-    text-align: left;
+
+.smallBigHeader{
+  font-size: 48px;
 }
 
-.left .header{
-    font-weight: 500;
+.header {
+  font-size: 72px;
+  padding-top: 20%;
 }
 
-.right .header{
-    font-weight: 500;
+.smallHeader {
+  font-size: 36px;
+  margin-top: 2%;
 }
 
-.right{
-    flex: 1;
-    text-align: left;
-    margin-left: 4rem;
-    margin-top: 8rem;
+.smallHeader:hover {
+  color: var(--light-gray);
 }
 
-.textBox{
-    display: grid;
-    grid-template-columns: 30% auto;
-    margin-top: 1.5rem;
+.text {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 10%;
 }
 
-.paragraphBox{
-    margin-bottom: 10rem;
-    margin-top: 6rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    border-left: 0.05rem solid var(--main-black);
+#navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  position: fixed;
+  top: 2%;
+  right: 7%;
 }
 
-.smallHeaderLeftSideTextBox{
-    grid-column: 1;
-    font-size: 3rem !important;
+.navigationElement {
+  text-decoration: line-through 1.5px var(--main-black);
+  flex: 1;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
 }
 
-.smallHeaderRightSideTextBox{
-    grid-column: 2;
-    padding-left: 5rem;
-}
-
-.headerBig{
-    color: var(--main-black);
-    font-size:8rem;
-    font-family: var(--main-font);
-    font-weight: 400;
-    margin-bottom: 2rem;
-}
-
-.header{
-    color: var(--main-black);
-    font-size: 5rem;
-    font-family: var(--main-font);
-    padding-top: 20%;
-}
-
-.smallHeader{
-    color: var(--main-black);
-    font-size: 2rem;
-    font-family: var(--main-font);
-    margin-top: 2%;
-}
-
-.smallHeader:hover{
-    color: var(--light-gray);
-}
-
-.text{
-    color: var(--main-black);
-    font-size: 1.5rem;
-    font-family: var(--main-font);
-    font-weight: 200;
-    margin-top: 2rem;
-}
-
-.paragraph{
-    color: var(--light-gray);
-    font-size: 1.2rem;
-    font-family: var(--main-font);
-    font-weight: 400;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-#navigation{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    width: 40vw;
-    position: fixed;
-    top: 2%;
-    right: 7%;
-}
-
-.navigationElement{
-    text-decoration: line-through 0.075rem var(--main-black);
-    flex: 1;
-    color: var(--main-black);
-    font-size: 1.2rem;
-    font-family: var(--main-font);
-    font-weight: 500;
-    text-align: right;
+.navigationElement:hover {
+  text-decoration: none;
 }
 
 .current{
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.navigationElement:hover{
-    text-decoration: none;
+.headerBig {
+  font-size: 72px;
+  font-weight: 400;
 }
 
-.boxOfBoxes{
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 60vh;
+.smallSmallHeader {
+  font-size: 24px;
+  font-family: var(--main-font);
+  margin-top: 2%;
 }
 
-.box{
-    flex: 1;
-    border-left: 0.05rem solid var(--main-black);
-    transform: rotate(15deg);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+.smallSmallHeader:hover {
+  color: var(--light-gray);
 }
 
-.boxVertical{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.paragraphBox {
+  margin-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-left: 0.05rem solid var(--main-black);
 }
 
-.box .textWrapper {
-    transform: rotate(-15deg);
-    text-align: center;
+.paragraph {
+  color: var(--light-gray);
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 5%;
+}
+
+
+@media  screen and (max-width: 480px) {
+  .smallBigHeader{
+    font-size: 28px;
+  }
+  .smallHeaderRightSideTextBox {
+    grid-column: 2;
+    padding-left: 10%;
+  }
+  .text {
+    font-size: 22px;
+    margin-top: 6%;
+  }
+  .smallHeader {
+    font-size: 28px;
+  }
+  .header {
+    font-size: 72px;
+    padding-top: 60%;
+  }
+  #navigation {
     width: 100%;
+  }
 }
 
-#contactBox{
-    max-height: 20vh;
+@media screen and (max-width: 480px) {
+  .textBox {
+    grid-template-columns: 100%;
+  }
+  .paddingLeftBox{
+      padding-bottom: 5%;
+  }
+  .headerBig {
+      margin-top: 20%;
+    }    
+}
+
+
+#resumePage, #portfolioPage {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+}
+
+.boxVertical {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+#contactBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.lineHorizontal{
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom:2%;
+    border-bottom: 1px solid var(--main-black);
+}
+
+.lineVertical{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    margin-right: 20%;
+    height: 10vw;
+    border-right: 1px solid var(--carmine);
+}
+
+.smallNavElement{
+  text-decoration: line-through 1.5px var(--main-black);
+}
+
+.image{
+  width: 70%;
+}
+
+.portfolioLink{
+  margin-top: 20%;
 }
