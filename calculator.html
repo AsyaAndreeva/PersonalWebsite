@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asya Andreeva</title>
 
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="/styles/calculator.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +32,36 @@
     <section class="section" id="portfolioPage"> 
         <a class="headerBig" href="/JavaScriptProjects.html">Java Script Projects</a>
         <div class="smallHeader smallNavElement">Calculator</div>
+        <div id="container">
+          <input type="text" id="res">
+          <div id="btnBox">
+              <input type="button" value='C' onclick="Clear()" class="button">
+              <input type="button" value='←' onclick="Back()" class="button">
+              <input type="button" value='%' onClick="Solve('%')" class="button">
+              <input type="button" value='/' onClick="Solve('/')" class="button">
+
+              <input type="button" value='7' onClick="Solve('7')" class="button">
+              <input type="button" value='8' onClick="Solve('8')" class="button">
+              <input type="button" value='9' onClick="Solve('9')" class="button">
+              <input type="button" value='*' onClick="Solve('*')" class="button">
+
+              <input type="button" value='4' onClick="Solve('4')" class="button">
+              <input type="button" value='5' onClick="Solve('5')" class="button">
+              <input type="button" value='6' onClick="Solve('6')" class="button">
+              <input type="button" value='-' onClick="Solve('-')" class="button">
+
+              <input type="button" value='1' onClick="Solve('1')" class="button">
+              <input type="button" value='2' onClick="Solve('2')" class="button">
+              <input type="button" value='3' onClick="Solve('3')" class="button">
+              <input type="button" value='+' onClick="Solve('+')" class="button">
+
+              <input type="button" value='00' onClick="Solve('00')" class="button">
+              <input type="button" value='0' onClick="Solve('0')" class="button">
+              <input type="button" value='.' onClick="Solve('.')" class="button">
+              <input type="button" value='=' onClick="Result()" class="button">
+            </div>
+        </div>
     </section>
+    <script src="/script/calculator.js"></script>
   </body>
 </html>
