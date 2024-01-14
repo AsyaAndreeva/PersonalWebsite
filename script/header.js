@@ -12,7 +12,6 @@ function toggleText() {
     ease: "none",
   });
     index++;
-    console.log(index);
     if (index >= textArray.length) {
         index = 0; // Reset the index when reaching the end of the array
       }

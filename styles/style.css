@@ -214,3 +214,9 @@ a:hover {
 .portfolioLink{
   margin-top: 20%;
 }
+
+.date{
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+}
