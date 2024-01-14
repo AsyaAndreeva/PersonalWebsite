@@ -156,7 +156,7 @@ a:hover {
 
 @media screen and (max-width: 480px) {
   .textBox {
-    grid-template-columns: 1;
+    grid-template-columns: 100%;
   }
   .paddingLeftBox{
       padding-bottom: 5%;
