@@ -78,13 +78,13 @@ a:hover {
   padding: 0%;
   display: flex;
   flex-direction: row;
-  width: 40%;
   position: fixed;
-  padding-top: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   margin-top: 0%;
   margin-bottom: 0%;
   top:0%;
-  right: 7%;
+  width: 100%;
   z-index: 1;
   background-color: var(--main-white);
 }
@@ -94,7 +94,12 @@ a:hover {
   flex: 1;
   font-size: 18px;
   font-weight: 500;
-  text-align: right;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#spacer{
+  flex: 6;
 }
 
 .navigationElement:hover {
@@ -108,6 +113,7 @@ a:hover {
 .headerBig {
   font-size: 72px;
   font-weight: 400;
+  margin-left: -1px;
 }
 
 .smallSmallHeader {
@@ -156,7 +162,12 @@ a:hover {
     padding-top: 0%;
   }
   #navigation {
-    width: 100%;
+    width: 96%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+  }
+  #spacer{
+    flex: 0;
   }
   #title {
     margin-bottom: 60%;
