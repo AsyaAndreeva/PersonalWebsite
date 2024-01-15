@@ -80,7 +80,10 @@ a:hover {
   flex-direction: row;
   width: 40%;
   position: fixed;
-  top: 2%;
+  padding-top: 6%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  top:0%;
   right: 7%;
   z-index: 1;
   background-color: var(--main-white);
@@ -184,6 +187,10 @@ a:hover {
   margin-left: 10%;
   margin-right: 10%;
   padding-top: 10%;
+}
+
+.mainPortfolioPage{
+  height: 96vh;
 }
 
 .boxVertical {
