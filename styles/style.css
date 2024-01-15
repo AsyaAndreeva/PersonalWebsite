@@ -2,11 +2,7 @@
   --main-white: #fdfffc;
   --main-black: #151515;
   --light-gray: #6f6d6d;
-  --teal: #0e7c7b;
-  --chinese-violet: #a5668b;
-  --cyclamen: #e86a92;
-  --indigo: #e0f5ff;
-  --carmine: #d0202f;
+  --more-light-gray: #afafaf;
   --main-font: "Advent Pro", "Plus Jakarta Sans", "Roboto", sans-serif;
 }
 * {
@@ -53,8 +49,7 @@ a:hover {
   padding-left: 20%;
 }
 
-
-.smallBigHeader{
+.smallBigHeader {
   font-size: 48px;
 }
 
@@ -80,12 +75,15 @@ a:hover {
 
 #navigation {
   list-style: none;
+  padding: 0%;
   display: flex;
   flex-direction: row;
   width: 40%;
   position: fixed;
   top: 2%;
   right: 7%;
+  z-index: 1;
+  background-color: var(--main-white);
 }
 
 .navigationElement {
@@ -100,7 +98,7 @@ a:hover {
   text-decoration: none;
 }
 
-.current{
+.current {
   text-decoration: none;
 }
 
@@ -136,9 +134,8 @@ a:hover {
   margin-right: 5%;
 }
 
-
-@media  screen and (max-width: 480px) {
-  .smallBigHeader{
+@media screen and (max-width: 480px) {
+  .smallBigHeader {
     font-size: 28px;
   }
   .smallHeaderRightSideTextBox {
@@ -152,11 +149,17 @@ a:hover {
     font-size: 28px;
   }
   .header {
-    font-size: 72px;
-    padding-top: 60%;
+    font-size: 58px;
+    padding-top: 0%;
   }
   #navigation {
     width: 100%;
+  }
+  #title {
+    margin-bottom: 60%;
+  }
+  #name {
+    margin-top: 100%;
   }
 }
 
@@ -164,16 +167,17 @@ a:hover {
   .textBox {
     grid-template-columns: 100%;
   }
-  .paddingLeftBox{
-      padding-bottom: 5%;
+  .paddingLeftBox {
+    padding-bottom: 5%;
   }
   .headerBig {
-      margin-top: 20%;
-    }    
+    margin-top: 20%;
+    font-size: 58px;
+  }
 }
 
-
-#resumePage, #portfolioPage {
+#resumePage,
+#portfolioPage {
   margin-left: 10%;
   margin-right: 10%;
   padding-top: 10%;
@@ -186,43 +190,54 @@ a:hover {
   flex-direction: row;
 }
 
-
 #contactBox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.lineHorizontal{
-    width: 80%;
-    margin-top: 2%;
-    margin-bottom:2%;
-    border-bottom: 1px solid var(--main-black);
+.lineHorizontal {
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px solid var(--main-black);
 }
 
-.lineVertical{
-    position: absolute;
-    bottom:0;
-    right: 0;
-    margin-right: 20%;
-    height: 10vw;
-    border-right: 1px solid var(--carmine);
+.lineVertical {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20%;
+  height: 10vw;
+  border-right: 1px solid var(--carmine);
 }
 
-.smallNavElement{
+.smallNavElement {
   text-decoration: line-through 1.5px var(--main-black);
 }
 
-.image{
+.image {
   width: 70%;
 }
 
-.portfolioLink{
+.portfolioLink {
   margin-top: 20%;
 }
 
-.date{
+.date {
   font-size: 14px;
   font-weight: 200;
   font-style: italic;
+}
+
+.material-symbols-outlined {
+  font-size: 48px !important;
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
+}
+
+footer {
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--more-light-gray);
+  font-size: 18px;
 }

@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asya Andreeva</title>
 
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="/styles/calculator.css"/>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="/styles/calculator.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
   <body>
@@ -26,42 +30,53 @@
       <li class="navigationElement current">
         <a id="portfolioNav" href="/portfolio.html">Portfolio</a>
       </li>
-      <li class="navigationElement"><a id="contactMeNav" href="resume.html#contactMe">Contact me</a></li>
+      <li class="navigationElement">
+        <a id="contactMeNav" href="resume.html#contactMe">Contact me</a>
+      </li>
     </ul>
 
-    <section class="section" id="portfolioPage"> 
-        <a class="headerBig" href="/JavaScriptProjects.html">Java Script Projects</a>
-        <div class="smallHeader smallNavElement">Calculator</div>
-        <div id="container">
-          <input type="text" id="res">
-          <div id="btnBox">
-              <input type="button" value='C' onclick="Clear()" class="button">
-              <input type="button" value='←' onclick="Back()" class="button">
-              <input type="button" value='%' onClick="Solve('%')" class="button">
-              <input type="button" value='/' onClick="Solve('/')" class="button">
+    <section class="section" id="portfolioPage">
+      <div class="headerBig">
+        <span class="material-symbols-outlined">keyboard_arrow_left</span
+        ><a href="/JavaScriptProjects.html">Java Script Projects</a>
+      </div>
+      <div class="smallHeader smallNavElement">Calculator</div>
+      <div id="container">
+        <input type="text" id="res" />
+        <div id="btnBox">
+          <input type="button" value="C" onclick="Clear()" class="button" />
+          <input type="button" value="←" onclick="Back()" class="button" />
+          <input type="button" value="%" onClick="Solve('%')" class="button" />
+          <input type="button" value="/" onClick="Solve('/')" class="button" />
 
-              <input type="button" value='7' onClick="Solve('7')" class="button">
-              <input type="button" value='8' onClick="Solve('8')" class="button">
-              <input type="button" value='9' onClick="Solve('9')" class="button">
-              <input type="button" value='*' onClick="Solve('*')" class="button">
+          <input type="button" value="7" onClick="Solve('7')" class="button" />
+          <input type="button" value="8" onClick="Solve('8')" class="button" />
+          <input type="button" value="9" onClick="Solve('9')" class="button" />
+          <input type="button" value="*" onClick="Solve('*')" class="button" />
 
-              <input type="button" value='4' onClick="Solve('4')" class="button">
-              <input type="button" value='5' onClick="Solve('5')" class="button">
-              <input type="button" value='6' onClick="Solve('6')" class="button">
-              <input type="button" value='-' onClick="Solve('-')" class="button">
+          <input type="button" value="4" onClick="Solve('4')" class="button" />
+          <input type="button" value="5" onClick="Solve('5')" class="button" />
+          <input type="button" value="6" onClick="Solve('6')" class="button" />
+          <input type="button" value="-" onClick="Solve('-')" class="button" />
 
-              <input type="button" value='1' onClick="Solve('1')" class="button">
-              <input type="button" value='2' onClick="Solve('2')" class="button">
-              <input type="button" value='3' onClick="Solve('3')" class="button">
-              <input type="button" value='+' onClick="Solve('+')" class="button">
+          <input type="button" value="1" onClick="Solve('1')" class="button" />
+          <input type="button" value="2" onClick="Solve('2')" class="button" />
+          <input type="button" value="3" onClick="Solve('3')" class="button" />
+          <input type="button" value="+" onClick="Solve('+')" class="button" />
 
-              <input type="button" value='00' onClick="Solve('00')" class="button">
-              <input type="button" value='0' onClick="Solve('0')" class="button">
-              <input type="button" value='.' onClick="Solve('.')" class="button">
-              <input type="button" value='=' onClick="Result()" class="button">
-            </div>
+          <input
+            type="button"
+            value="00"
+            onClick="Solve('00')"
+            class="button"
+          />
+          <input type="button" value="0" onClick="Solve('0')" class="button" />
+          <input type="button" value="." onClick="Solve('.')" class="button" />
+          <input type="button" value="=" onClick="Result()" class="button" />
         </div>
+      </div>
     </section>
     <script src="/script/calculator.js"></script>
   </body>
+  <footer>©Asya Andreeva. All rights reserved.</footer>
 </html>

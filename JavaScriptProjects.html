@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <ul id="navigation">
@@ -25,23 +29,37 @@
       <li class="navigationElement current">
         <a id="portfolioNav" href="/portfolio.html">Portfolio</a>
       </li>
-      <li class="navigationElement"><a id="contactMeNav" href="resume.html#contactMe">Contact me</a></li>
+      <li class="navigationElement">
+        <a id="contactMeNav" href="resume.html#contactMe">Contact me</a>
+      </li>
     </ul>
 
-    <section class="section" id="portfolioPage"> 
-        <a class="headerBig" href="/portfolio.html">Portfolio</a>
-        <div class="smallHeader smallNavElement">JavaScript Projects</div>
+    <section class="section" id="portfolioPage">
+      <div class="headerBig">
+        <span class="material-symbols-outlined">keyboard_arrow_left</span
+        ><a href="/portfolio.html">Portfolio</a>
+      </div>
+      <div class="smallHeader smallNavElement">JavaScript Projects</div>
 
-            <div class="textBox">
-                <div class="smallHeaderLeftSideTextBox paddingLeftBox">
-                    <a class="smallBigHeader" href="/calculator.html">Calculator</a>
-                    <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim ut sem viverra aliquet eget sit. Feugiat in ante metus dictum at.</div>
-                </div>
-                <div class="paragraphBox">
-                    <img class="image" src="/images/calculator.svg">
-                </div>
-            </div>
-
+      <div class="textBox">
+        <div class="smallHeaderLeftSideTextBox paddingLeftBox">
+          <a class="smallBigHeader" href="/calculator.html">Calculator</a
+          ><span
+            class="material-symbols-outlined"
+            style="font-size: 28px !important"
+            >keyboard_arrow_right</span
+          >
+          <div class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim
+            ut sem viverra aliquet eget sit. Feugiat in ante metus dictum at.
+          </div>
+        </div>
+        <div class="paragraphBox">
+          <img class="image" src="/images/calculator.svg" />
+        </div>
+      </div>
     </section>
   </body>
+  <footer>©Asya Andreeva. All rights reserved.</footer>
 </html>

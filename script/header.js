@@ -13,9 +13,7 @@ function toggleText() {
   });
     index++;
     if (index >= textArray.length) {
-        index = 0; // Reset the index when reaching the end of the array
+        index = 0;
       }
 }
-
-// Call toggleText() every 5 seconds
 setInterval(toggleText, 3000);
