@@ -3,6 +3,9 @@
   height: 100%;
   padding-bottom: 8%;
 }
+#homePageSection1{
+  height: 80vh;
+}
 
 #homePageSection2 {
   height: 100%;
