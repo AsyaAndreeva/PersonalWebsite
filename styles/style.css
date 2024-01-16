@@ -145,6 +145,9 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
+  .paragraph{
+    font-size: 18px;
+  }
   .navigationElement{
     font-size: 18px;
   }
@@ -197,7 +200,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width:480px) {
   #spacer{
     flex: 1;
   }
