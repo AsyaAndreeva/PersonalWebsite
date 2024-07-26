@@ -1,6 +1,6 @@
 let text = document.getElementById("title");
 let originalText = text.textContent;
-let textArray = ['Student teacher at SoftUni Kids', 'UI & UX Designer', 'Web Developer'];
+let textArray = ['Web Developer', 'Student teacher at SoftUni Kids', 'UI/UX Engineer'];
 let index = 0;
 
 function toggleText() {
